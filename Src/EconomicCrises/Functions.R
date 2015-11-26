@@ -72,6 +72,7 @@ dot.com.bubble <- function(stock) {
 stock.info <- function(stock) {
   stock.max <- max(stock$Close)
   df.wig <- data.frame(stock)
+  #TODO: fixit
   stock.max.date <- rownames(df.wig[df.wig$Close == 1344.61, ] )
   
   

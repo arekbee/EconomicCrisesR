@@ -1,16 +1,22 @@
 Economic Crises
 ========================================================
+title: Economic Crises
 author: Arkadiusz Beer
-date: 
+date: `r Sys.Date()` 
 #source: Load.R
 #source: Functions.R
 css: custom.css
 autosize: true
 font-family: 'Arial'
-
+left: 70%
 
 A miało być tak pięknie 
 ========================================================
+transition: zoom #none, linear, rotate, fade, zoom, concave
+transition-speed: slow #default, slow, fast
+type: section #section, sub-section, prompt, alert
+incremental: true
+
 ```{r setup, echo=FALSE}
 source('Functions.R')
 source('Load.R')
@@ -34,16 +40,17 @@ Tulip Mania
 
 Tulip Mania
 ========================================================
+incremental: true
 * Peak price of tulip bulb was for 202 guilders
   * Typical skilled worker at this time made about 150 guilders per yaer
-  * Today an average tulip bulb would cost around $70k    
+  * Today an average tulip bulb would cost around **$70k**    
 * 1 bulb was traded for:
   * 4 oxes, 8 swine, 12 sheep, 2 hogsheads of wine, 4 turns of beer, 1k pounds of chees, 2 tons of butter, 1 bed, clothes, wheat
   * Valued around 2k guilders
 * Traded 40 tulip bulb for 100k guilders
-* One Semper Augustus Tulip had been seld for 6k guilders
+* One Semper Augustus Tulip had been seld for **6k** guilders
 * Sellers had made purchases on credit
-* Greater fool theory
+* *Greater fool theory*
 
 ![Semper Augustus Tulip](./Figures/Semper_Augustus_Tulip.jpg)
 
@@ -51,8 +58,10 @@ Tulip Mania
 
 
 
-Wilki kryzys 
+Wielki kryzys 
 ========================================================
+
+
 
 
 
@@ -61,7 +70,7 @@ Dot-come bubble (1995 - 2003)
 `r nasdaq.min  `
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
 chartSeries(IXIC, TA=NULL, name = 'NASDAQ100', theme = 'white')
 ```
 
