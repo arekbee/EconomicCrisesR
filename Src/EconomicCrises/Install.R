@@ -1,0 +1,11 @@
+install.packages('ggplot2')
+install.packages('dplyr')
+install.packages('plyr')
+install.packages("quantmod")
+install.packages(c('RCurl', 'bitops'))
+install.packages('RQuantLib')
+install.packages('zoo')
+install.packages('lattice')
+install.packages('xtsExtra')
+
+install.packages("rmarkdown")

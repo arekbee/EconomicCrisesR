@@ -11,3 +11,12 @@
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
+.Rproj.user
+
+
+#Mac file
+.DS_Store
+
+#R pres
+Presentation-figure/
+Presentation.md

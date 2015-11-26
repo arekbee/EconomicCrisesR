@@ -1,0 +1,123 @@
+Economic Crises
+========================================================
+author: Arkadiusz Beer
+date: 
+#source: Load.R
+#source: Functions.R
+css: custom.css
+autosize: true
+font-family: 'Arial'
+
+
+A miało być tak pięknie 
+========================================================
+```{r setup, echo=FALSE}
+source('Functions.R')
+source('Load.R')
+```
+
+
+Tulip Mania (1636 - 1637)
+========================================================
+
+
+```{r, echo=FALSE}
+chartSeries(tulip.xts, name =  'One tulip buld price', theme = 'white')
+```
+
+
+
+Tulip Mania
+========================================================
+
+![tulipomania](./Figures/tulipomania.jpg)
+
+Tulip Mania
+========================================================
+* Peak price of tulip bulb was for 202 guilders
+  * Typical skilled worker at this time made about 150 guilders per yaer
+  * Today an average tulip bulb would cost around $70k    
+* 1 bulb was traded for:
+  * 4 oxes, 8 swine, 12 sheep, 2 hogsheads of wine, 4 turns of beer, 1k pounds of chees, 2 tons of butter, 1 bed, clothes, wheat
+  * Valued around 2k guilders
+* Traded 40 tulip bulb for 100k guilders
+* One Semper Augustus Tulip had been seld for 6k guilders
+* Sellers had made purchases on credit
+* Greater fool theory
+
+![Semper Augustus Tulip](./Figures/Semper_Augustus_Tulip.jpg)
+
+
+
+
+
+Wilki kryzys 
+========================================================
+
+
+
+Dot-come bubble (1995 - 2003)
+========================================================
+`r nasdaq.min  `
+
+
+```{r, echo=FALSE}
+chartSeries(IXIC, TA=NULL, name = 'NASDAQ100', theme = 'white')
+```
+
+
+
+
+
+Dot-come bubble 
+========================================================
+* Pets.com
+  * Interviewing people on the streets
+  * Lost $147M in 9 months
+* eToys.com
+  * Selling toys
+  * Million of dollars spent on marketing and partnerships
+  * $247M debt
+* theglobe.com
+  * Social media sites
+  * In IPO stocks prices jump form $9 to $97
+  * Closed up in March 2007
+* Flooz.com
+  * Virtual currency
+  * Money-laundering scheme 
+  * Started in February 1999, closed on August 2001
+
+
+Dot-come bubble in Poland
+========================================================
+ `r stock.info (WIG.INFO)`
+
+```{r, echo=FALSE}
+chartSeries.simple(WIG.INFO, text = "WIG Informatyka 1995-2003")
+```
+
+
+
+Kryzys na rynkach nieruchomości 
+========================================================
+
+
+
+
+Financial crisis of 2007–08
+========================================================
+* 1999 deregulation of Glass-Steagall Act
+  * Merging Retail Banking with Investment Banking
+
+
+```{r, echo=FALSE}
+
+```
+
+China crisis
+========================================================
+
+
+
+Crisis in Poland?
+========================================================
