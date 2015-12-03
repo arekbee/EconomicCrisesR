@@ -142,10 +142,10 @@ Dot-come bubble
 
 Dot-come bubble in Poland - WIG_Info
 ========================================================
- `r #stock.info (WIG.INFO)`
+ `r stock.info (WIG.INFO)`
 
 ```{r, echo=FALSE}
-#chartSeries.simple(WIG.INFO, text = "WIG Informatyka 1995-2003")
+chartSeries.simple(WIG.INFO, text = "WIG Informatyka 1995-2003")
 ```
 
 
@@ -208,6 +208,14 @@ Chinese stock market crash
 * Shanghai Stock Exchange
   * A-shares
   * B-shares
+* Causes
+  * Investing with borrowed money
+  * Greater fool theory
+* Drop 
+  * Shanghai 8,5% 
+  * Dow Jones next day on open 10%
+
+
 
 
 
