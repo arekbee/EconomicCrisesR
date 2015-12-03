@@ -15,43 +15,25 @@ tulip.date.f <- strptime(tulip.date, format = "%d-%m-%Y")
 tulip.xts <-  xts(tulip.price, order.by= tulip.date.f )
 
 
+
+ getSymbols("DJIA", src="yahoo", from=as.Date('1925-01-01'), to=as.Date('1935-01-01'))
+ djia <- DJIA
+
+
+
+
 getSymbols("^ixic",  src = "yahoo", from = as.Date("1995-01-01"), to = as.Date("2003-01-01"))
 
-
-nasdaq.max <- IXIC[IXIC$IXIC.Close == max(IXIC$IXIC.Close)]
-nasdaq.min <- IXIC[IXIC$IXIC.Close == min(IXIC$IXIC.Close)]
-
-
-
-
 WIG.INFO <- getStooqData.xts("wig_info") %>% dot.com.bubble
+#ACP <- getStooqData.xts("acp") %>% dot.com.bubble #Asseco Poland SA
+#CDR <- getStooqData.xts("cdr") %>% dot.com.bubble #CD Projekt SA 
+#CMR <- getStooqData.xts("CMR") %>% dot.com.bubble #Comarch SA
+#SGN <- getStooqData.xts("SGN") %>% dot.com.bubble #Sygnity SA
 
-ACP <- getStooqData.xts("acp") %>% dot.com.bubble #Asseco Poland SA
-CDR <- getStooqData.xts("cdr") %>% dot.com.bubble #CD Projekt SA 
-CMR <- getStooqData.xts("CMR") %>% dot.com.bubble #Comarch SA
-MCL <- getStooqData.xts("MCL") %>% dot.com.bubble #Macrologic SA
-SGN <- getStooqData.xts("SGN") %>% dot.com.bubble #Sygnity SA
-SME <- getStooqData.xts("acp") %>% dot.com.bubble #Simple SA 
-
-
-chartSeries.simple(ACP, text = "Asseco")
-
-
-
-
-head(ACP)
-
-index(ACP)
-ACP$Close
-plot(index(ACP), )
-lm(ACP, formula = ACP$Close ~ index(ACP))
 
 
 xauusd <- getStooqData.xts("xauusd")
 xuapln <- getStooqData.xts("xaupln")
-
-head(xauusd["1985::"])
-head(xuapln["1985::"])
 
 gold <-  xuapln["1985::"] /xauusd["1985::"] 
 cur <- getStooqData.xts("usdpln")
@@ -61,7 +43,7 @@ cur <- getStooqData.xts("usdpln")
 #spx <-  getStooqData('^SPX')
 #name(spx) <- spx[,1]
 #spx.xts <- xts(spx[,-1],order.by=as.POSIXct(spx$Date))
-#spx.xts.19101930 <-  spx.xts["1910/1930"]$Close
+#spx.xts.19101935 <-  spx.xts["1910/1935"]$Close
 
 
 #getSymbols("USD3MTD156N",src="FRED")

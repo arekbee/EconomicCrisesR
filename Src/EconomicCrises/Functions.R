@@ -70,13 +70,12 @@ dot.com.bubble <- function(stock) {
 
 
 stock.info <- function(stock) {
-  stock.max <- max(stock$Close)
-  df.wig <- data.frame(stock)
-  #TODO: fixit
-  stock.max.date <- rownames(df.wig[df.wig$Close == 1344.61, ] )
+  stock.max <- max(stock[,4])
+  stock.df <- data.frame(stock)
+  peak.date <- rownames(stock.df[stock.df[,4] == max(stock.df[,4]),])
+  stock.after.peak <-  stock[paste(peak.date,'::')]
   
-  
-  stock.min <- min(stock$Close)
+  stock.min <- min(stock.after.peak[,4])
   stock.pr <-  ((stock.max - stock.min) / stock.max ) * -100
   stock.pr.to.grow <- (stock.max - stock.min) / stock.min * 100
   str <- paste(c("Max:",stock.max, " Min:", stock.min, ' Procentiage:', sprintf('%.0f%%',stock.pr),' To grow:',  sprintf('%.0f%%',stock.pr.to.grow)), collapse = ' ')

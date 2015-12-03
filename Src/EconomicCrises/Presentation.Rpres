@@ -3,19 +3,24 @@ Economic Crises
 title: Economic Crises
 author: Arkadiusz Beer
 date: `r Sys.Date()` 
-#source: Load.R
-#source: Functions.R
+source: Load.R
+source: Functions.R
 css: custom.css
 autosize: true
 font-family: 'Arial'
-left: 70%
 
-A miało być tak pięknie 
+
+For whom is this presentation
 ========================================================
-transition: zoom #none, linear, rotate, fade, zoom, concave
-transition-speed: slow #default, slow, fast
-type: section #section, sub-section, prompt, alert
+#transition: zoom #none, linear, rotate, fade, zoom, concave
+#transition-speed: slow #default, slow, fast
+#type: section #section, sub-section, prompt, alert
 incremental: true
+
+* If you (or someone in your family) has a real estate
+* If you have mortgage (or any credit)
+* If you are working for non-media company
+* If you do not know about economic cycles
 
 ```{r setup, echo=FALSE}
 source('Functions.R')
@@ -26,56 +31,94 @@ source('Load.R')
 Tulip Mania (1636 - 1637)
 ========================================================
 
-
-```{r, echo=FALSE}
+```{r, echo=FALSE,  width="1920px",height="1080px"}
 chartSeries(tulip.xts, name =  'One tulip buld price', theme = 'white')
 ```
 
 
+Tulip Mania
+========================================================
+<div class="container">"
+<img src="./Figures/tulipomania.jpg"/>
+<img src="./Figures/Semper_Augustus_Tulip.jpg"/>
+
+</div>
+
+<div class="footer">
+Semper Augustus Tulip
+</div>
+
 
 Tulip Mania
 ========================================================
 
-![tulipomania](./Figures/tulipomania.jpg)
-
-Tulip Mania
-========================================================
-incremental: true
-* Peak price of tulip bulb was for 202 guilders
-  * Typical skilled worker at this time made about 150 guilders per yaer
-  * Today an average tulip bulb would cost around **$70k**    
+* Peak price of tulip bulb was for **202 guilders**
+  * Typical skilled worker at that time made about **150 guilders** per year
+  * Today an average tulip bulb would cost around **70 000 dolars**    
 * 1 bulb was traded for:
   * 4 oxes, 8 swine, 12 sheep, 2 hogsheads of wine, 4 turns of beer, 1k pounds of chees, 2 tons of butter, 1 bed, clothes, wheat
   * Valued around 2k guilders
-* Traded 40 tulip bulb for 100k guilders
-* One Semper Augustus Tulip had been seld for **6k** guilders
+* Traded 40 tulip bulb for **100 000 guilders**
+* One Semper Augustus Tulip had been seld for **6 000 guilders**
 * Sellers had made purchases on credit
 * *Greater fool theory*
 
-![Semper Augustus Tulip](./Figures/Semper_Augustus_Tulip.jpg)
 
 
 
-
-
-Wielki kryzys 
+Greater fool theory
 ========================================================
 
+<img src="./Figures/greater-fool-theory-diamondbhai.jpg" />
 
+
+Great Depression (1929 - 1932)
+========================================================
+* Black Thursday (24 October 1929)
+* State
+  * World: I World War, wrong monetary policy
+  * Europe: Customs wars  
+  * USA: Take loan, buy stock
+  * Deutsch-Polnischer Zollkrieg
+  
+
+
+
+
+Great Depression - Effects of crisis
+========================================================
+* 1/3 of unemployment
+* Chain of bankruptcy (Kredit-Anstalt Bank)
+* 46% industrial production in USA
+* Almost all us bank has been closed
+
+ `r stock.info (djia)`
+
+```{r, echo=FALSE,  width="1920px",height="1080px"}
+chartSeries.simple(djia , text =  'Dow Jones Industrial Average')
+```
+
+
+Great Depression - Regulations
+========================================================
+* Financial reports every year 
+* Glass-Steagall Act '33
+  * Seperation of retail and investment banking
+* Government intervention
+  * Hiring unemployed people by sate institutions in 1933
+  
 
 
 
 Dot-come bubble (1995 - 2003)
 ========================================================
-`r nasdaq.min  `
+* 17 September 2001 (6 days after WTC)
+* 6,98% on one day
 
-
+  `r stock.info (IXIC)`
 ```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
-chartSeries(IXIC, TA=NULL, name = 'NASDAQ100', theme = 'white')
+chartSeries.simple(IXIC, text = 'NASDAQ100')
 ```
-
-
-
 
 
 Dot-come bubble 
@@ -97,18 +140,49 @@ Dot-come bubble
   * Started in February 1999, closed on August 2001
 
 
-Dot-come bubble in Poland
+Dot-come bubble in Poland - WIG_Info
 ========================================================
- `r stock.info (WIG.INFO)`
+ `r #stock.info (WIG.INFO)`
 
 ```{r, echo=FALSE}
-chartSeries.simple(WIG.INFO, text = "WIG Informatyka 1995-2003")
+#chartSeries.simple(WIG.INFO, text = "WIG Informatyka 1995-2003")
 ```
 
 
-
-Kryzys na rynkach nieruchomości 
+Dot-come bubble in Poland - Asseco Poland SA
 ========================================================
+ `r #stock.info (ACP)`
+
+```{r, echo=FALSE}
+#chartSeries.simple(ACP, text = "Asseco Poland SA 1995-2003")
+```
+
+
+Dot-come bubble in Poland - CD Projekt SA
+========================================================
+ `r #stock.info (CDR)`
+
+```{r, echo=FALSE}
+#chartSeries.simple(CDR, text = "CD Projekt SA 1995-2003")
+```
+
+
+Dot-come bubble in Poland - Comarch SA
+========================================================
+ `r #stock.info (CMR)`
+
+```{r, echo=FALSE}
+#chartSeries.simple(CMR, text = "Comarch SA 1995-2003")
+```
+
+Dot-come bubble in Poland - Sygnity SA
+========================================================
+ `r #stock.info (SGN)`
+
+```{r, echo=FALSE}
+#chartSeries.simple(SGN, text = "Sygnity SA 1995-2003")
+```
+
 
 
 
@@ -119,14 +193,46 @@ Financial crisis of 2007–08
   * Merging Retail Banking with Investment Banking
 
 
+Financial crisis of 2007–08
+========================================================
+* 
+
+
 ```{r, echo=FALSE}
 
 ```
 
-China crisis
+Chinese stock market crash 
 ========================================================
+* 12 June 2015
+* Shanghai Stock Exchange
+  * A-shares
+  * B-shares
 
 
 
 Crisis in Poland?
 ========================================================
+
+
+
+What have we skipped?
+========================================================
+* Japan crisis in 1991
+* Zimbabe inflation
+* Germany inflation
+
+
+
+
+
+
+Tank you 
+========================================================
+* Any Questions?
+* Economic Crises
+* Arkadiusz Beer
+
+
+
+
