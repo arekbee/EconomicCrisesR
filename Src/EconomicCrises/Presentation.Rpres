@@ -28,30 +28,30 @@ source('Load.R')
 ```
 
 
+
+
 Tulip Mania (1636 - 1637)
 ========================================================
+Semper Augustus Tulip
 
-```{r, echo=FALSE,  width="1920px",height="1080px"}
+<img src="./Figures/Semper_Augustus_Tulip.jpg"/>
+
+
+Tulip Mania
+========================================================
+
+```{r, echo=FALSE,   out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
 chartSeries(tulip.xts, name =  'One tulip buld price', theme = 'white')
 ```
 
 
 Tulip Mania
 ========================================================
-<div class="container">"
 <img src="./Figures/tulipomania.jpg"/>
-<img src="./Figures/Semper_Augustus_Tulip.jpg"/>
-
-</div>
-
-<div class="footer">
-Semper Augustus Tulip
-</div>
 
 
 Tulip Mania
 ========================================================
-
 * Peak price of tulip bulb was for **202 guilders**
   * Typical skilled worker at that time made about **150 guilders** per year
   * Today an average tulip bulb would cost around **70 000 dolars**    
@@ -62,6 +62,7 @@ Tulip Mania
 * One Semper Augustus Tulip had been seld for **6 000 guilders**
 * Sellers had made purchases on credit
 * *Greater fool theory*
+  * The bigger fool theory
 
 
 
@@ -69,20 +70,35 @@ Tulip Mania
 Greater fool theory
 ========================================================
 
-<img src="./Figures/greater-fool-theory-diamondbhai.jpg" />
+<img src="./Figures/greater-fool-theory-diamondbhai.jpg" width="1024px"" />
+
+
+
+In the 20th century
+========================================================
+type: section
 
 
 Great Depression (1929 - 1932)
 ========================================================
-* Black Thursday (24 October 1929)
 * State
   * World: I World War, wrong monetary policy
   * Europe: Customs wars  
   * USA: Take loan, buy stock
   * Deutsch-Polnischer Zollkrieg
+* Everyone wanted to invest  
   
-
-
+  
+Great Depression - Black days
+========================================================
+* Black Thursday (24 October 1929)
+  * Lost 11% on open
+* Black Monday (28 October 1929)
+  * Lost 13% on close
+* Black Tuesday (29 October 1929)  
+  * Lost 12% on close
+  
+<img src="./Figures/wall_street_1929.jpg" />
 
 
 Great Depression - Effects of crisis
@@ -90,11 +106,10 @@ Great Depression - Effects of crisis
 * 1/3 of unemployment
 * Chain of bankruptcy (Kredit-Anstalt Bank)
 * 46% industrial production in USA
-* Almost all us bank has been closed
+* Almost all US banks has been closed
 
- `r stock.info (djia)`
 
-```{r, echo=FALSE,  width="1920px",height="1080px"}
+```{r, echo=FALSE,  out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
 chartSeries.simple(djia , text =  'Dow Jones Industrial Average')
 ```
 
@@ -109,13 +124,15 @@ Great Depression - Regulations
   
 
 
+In the 21st century
+========================================================
+type: section
 
 Dot-come bubble (1995 - 2003)
 ========================================================
 * 17 September 2001 (6 days after WTC)
 * 6,98% on one day
 
-  `r stock.info (IXIC)`
 ```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
 chartSeries.simple(IXIC, text = 'NASDAQ100')
 ```
@@ -142,65 +159,109 @@ Dot-come bubble
 
 Dot-come bubble in Poland - WIG_Info
 ========================================================
- `r stock.info (WIG.INFO)`
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
 chartSeries.simple(WIG.INFO, text = "WIG Informatyka 1995-2003")
 ```
 
 
 Dot-come bubble in Poland - Asseco Poland SA
 ========================================================
- `r #stock.info (ACP)`
 
-```{r, echo=FALSE}
-#chartSeries.simple(ACP, text = "Asseco Poland SA 1995-2003")
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
+chartSeries.simple(ACP, text = "Asseco Poland SA 1995-2003")
 ```
 
 
 Dot-come bubble in Poland - CD Projekt SA
 ========================================================
- `r #stock.info (CDR)`
-
-```{r, echo=FALSE}
-#chartSeries.simple(CDR, text = "CD Projekt SA 1995-2003")
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
+chartSeries.simple(CDR, text = "CD Projekt SA 1995-2003")
 ```
 
 
 Dot-come bubble in Poland - Comarch SA
 ========================================================
- `r #stock.info (CMR)`
 
-```{r, echo=FALSE}
-#chartSeries.simple(CMR, text = "Comarch SA 1995-2003")
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
+chartSeries.simple(CMR, text = "Comarch SA 1995-2003")
 ```
 
 Dot-come bubble in Poland - Sygnity SA
 ========================================================
- `r #stock.info (SGN)`
 
-```{r, echo=FALSE}
-#chartSeries.simple(SGN, text = "Sygnity SA 1995-2003")
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
+chartSeries.simple(SGN, text = "Sygnity SA 1995-2003")
 ```
 
 
 
 
 
-Financial crisis of 2007–08
+Subprime mortgage crisis 2007–2009
 ========================================================
 * 1999 deregulation of Glass-Steagall Act
   * Merging Retail Banking with Investment Banking
+* US Federal Reserve lowers Federal funds rate 11 times
+  * from 6.5% (May 2000) to 1.75% (December 2001)
+  * Alan Greenspan lowers federal reserve’s key interest rate to 1% in 2003, the lowest in 45 years
+* Take credit
+  * By 2008, typical US household owned 13 credit cards
+  * Home ownership rate increased from 64% in 1994 to an all-time high of 69.2% in 2004
 
 
-Financial crisis of 2007–08
+Subprime mortgage crisis - Mortgage-backed security
 ========================================================
-* 
+<img src="./Figures/Mortgage_backed_security.jpg" width ="1024px"/>
 
 
-```{r, echo=FALSE}
 
-```
+Subprime mortgage crisis - consequences
+========================================================
+* Deep recession
+* 9 million jobs in  2008
+* Housing prices fell nearly 30%
+* Stock market fell approximately 50%  by 2009
+
+<img src="./Figures/Too_Big_to_Fail_film.jpg" width="512px" />
+
+Subprime mortgage crisis - consequences
+========================================================
+* Deep recession
+* 9 million jobs in  2008
+* Housing prices fell nearly 30%
+* Stock market fell approximately 50%  by 2009
+
+<img src="./Figures/Too_Big_to_Fail_film.jpg" width="512px" />
+
+Subprime mortgage crisis - Banks
+========================================================
+* Bankruptcy
+  * Lehman Brothers 
+  * Bear Stearns
+* Forced sales
+  * Merrill Lynch sold to Bank of America
+  * Washington Mutual sold to JP MorganChase 
+* Loss of credibility in ranking for Moody's and Standard and Poor's 
+* The US Federal Reserve lending program
+  * Henry Paulson financial rescue plan 
+  * American International Group (AIG) 85 bilion dolars
+  * Troubled Asset Relief Program with 700 bilion dolars 
+
+
+Subprime mortgage crisis - prediction mechanisms
+========================================================
+* Technical
+  * Gaussian  Copula
+  * Monte Carlo Simulation
+* Fundamental
+  * "There was the greatest bubble I've ever seen in my life...The entire American public eventually was caught up in a belief that housing prices could not fall dramatically" - Warren Buffett 
+  * "A Home Without Equity is just a Rental with Debt" -John Posner 2001 was criticizing the massive growth in home equity loans and refinancing for consumer purchases, amongst other things
+  * Calling housing market a 'ponzi scheme' by Greg Lippman, Deutsche Bank in 2005
+  * Robert J. Shiller gives talk about housing bubble to Federal Deposit Insurance Corporation in 2005 and writes a book about it.
+
+
+
 
 Chinese stock market crash 
 ========================================================
@@ -216,30 +277,59 @@ Chinese stock market crash
   * Dow Jones next day on open 10%
 
 
+Chinese stock market crash -SHANGHAI B-SHARE INDEX 
+========================================================
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
+chartSeries.simple(shbs, text = "Since 2005")
+```
+
+Chinese stock market crash - Shanghai Composite Index 
+========================================================
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
+chartSeries.simple(shc, text = "Since 2005")
+```
+
+Chinese stock market crash -  Hang Seng Index - Hong Kong 
+========================================================
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
+chartSeries.simple(hsi, text = "Since 2005")
+```
 
 
 
 Crisis in Poland?
 ========================================================
 
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
+chartSeries.simple(Wig20, text = "Wig20 since 2005")
+```
 
 
-What have we skipped?
+
+Poland comparing to European countries?
 ========================================================
-* Japan crisis in 1991
-* Zimbabe inflation
-* Germany inflation
+<center>
+<img src="./Figures/wig.png" width="1024px" />
+</center>
 
 
-
-
-
-
-Tank you 
+Housing market in Poland
 ========================================================
+
+```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
+chartSeries.simple(wibor, text = "WIBOR 3M since 2005")
+```
+
+
+
+
+
+Thank you 
+========================================================
+type: section
 * Any Questions?
-* Economic Crises
-* Arkadiusz Beer
+* Title: Economic Crises
+* Author: Arkadiusz Beer
 
 
 

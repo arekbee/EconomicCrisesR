@@ -6,6 +6,7 @@ library(RCurl)
 #library(RQuantLib)
 library(xts)
 library(lattice)
+library(ggvis)
 
 #https://en.wikipedia.org/wiki/List_of_economic_crises
 
@@ -25,10 +26,22 @@ tulip.xts <-  xts(tulip.price, order.by= tulip.date.f )
 getSymbols("^ixic",  src = "yahoo", from = as.Date("1995-01-01"), to = as.Date("2003-01-01"))
 
 WIG.INFO <- getStooqData.xts("wig_info") %>% dot.com.bubble
-#ACP <- getStooqData.xts("acp") %>% dot.com.bubble #Asseco Poland SA
-#CDR <- getStooqData.xts("cdr") %>% dot.com.bubble #CD Projekt SA 
-#CMR <- getStooqData.xts("CMR") %>% dot.com.bubble #Comarch SA
-#SGN <- getStooqData.xts("SGN") %>% dot.com.bubble #Sygnity SA
+ACP <- getStooqData.xts("acp") %>% dot.com.bubble #Asseco Poland SA
+CDR <- getStooqData.xts("cdr") %>% dot.com.bubble #CD Projekt SA 
+CMR <- getStooqData.xts("CMR") %>% dot.com.bubble #Comarch SA
+SGN <- getStooqData.xts("SGN") %>% dot.com.bubble #Sygnity SA
+
+
+
+Wig20 <- getStooqData.xts("Wig20") %>% last.from2005 
+
+wibor <- getStooqData.xts("PLOPLN3M") %>% last.from2005
+
+
+shbs   <- getStooqData.xts("^shbs") %>% last.from2005
+shc <- getStooqData.xts("^shc") %>% last.from2005
+hsi <- getStooqData.xts("^hsi") %>% last.from2005
+
 
 
 

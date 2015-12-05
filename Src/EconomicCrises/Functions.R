@@ -68,6 +68,10 @@ dot.com.bubble <- function(stock) {
   return(stock['1995/2003'])
 }
 
+last.from2005 <- function(stock) {
+  return(stock['2005::'])
+}
+
 
 stock.info <- function(stock) {
   stock.max <- max(stock[,4])

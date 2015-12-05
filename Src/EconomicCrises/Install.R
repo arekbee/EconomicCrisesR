@@ -9,3 +9,4 @@ install.packages('lattice')
 install.packages('xtsExtra')
 
 install.packages("rmarkdown")
+install.packages("ggvis")
