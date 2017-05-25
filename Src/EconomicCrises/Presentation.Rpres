@@ -138,7 +138,7 @@ chartSeries.simple(IXIC, text = 'NASDAQ100')
 ```
 
 
-Dot-come bubble 
+Dot-com bubble 
 ========================================================
 * Pets.com
   * Interviewing people on the streets
@@ -157,7 +157,7 @@ Dot-come bubble
   * Started in February 1999, closed on August 2001
 
 
-Dot-come bubble in Poland - WIG_Info
+Dot-com bubble in Poland - WIG_Info
 ========================================================
 
 ```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
@@ -165,7 +165,7 @@ chartSeries.simple(WIG.INFO, text = "WIG Informatyka 1995-2003")
 ```
 
 
-Dot-come bubble in Poland - Asseco Poland SA
+Dot-com bubble in Poland - Asseco Poland SA
 ========================================================
 
 ```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
@@ -173,21 +173,21 @@ chartSeries.simple(ACP, text = "Asseco Poland SA 1995-2003")
 ```
 
 
-Dot-come bubble in Poland - CD Projekt SA
+Dot-com bubble in Poland - CD Projekt SA
 ========================================================
 ```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
 chartSeries.simple(CDR, text = "CD Projekt SA 1995-2003")
 ```
 
 
-Dot-come bubble in Poland - Comarch SA
+Dot-com bubble in Poland - Comarch SA
 ========================================================
 
 ```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
 chartSeries.simple(CMR, text = "Comarch SA 1995-2003")
 ```
 
-Dot-come bubble in Poland - Sygnity SA
+Dot-com bubble in Poland - Sygnity SA
 ========================================================
 
 ```{r, echo=FALSE, out.width="1920px",height="1080px",fig.width=8,fig.height=4.5,dpi=300}
